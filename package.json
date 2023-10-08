@@ -1,0 +1,15 @@
+{
+  "name": "jsf",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "jscrewit": "^2.35.1"
+  },
+  "scripts": {
+    "convert": "node convertjsf.js",
+    "test-types": "node ./tests/type-conversion.js",
+    "test-coercion": "node ./tests/coercion.js"
+  }
+}
