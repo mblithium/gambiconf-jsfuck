@@ -4,6 +4,16 @@ Desenvolvido para apresentar uma gambiarra com jsfu#$ na [Gambiconf](https://gam
 
 Você pode aprender mais sobre o funcionamento no [README do projeto do aemkei](https://github.com/aemkei/jsfuck/blob/main/README.md) (Em inglês).
 
+Para acessar a demostração você pode entrar da página hospedada no Github Pages.
+
+<div style="text-align: center;">
+
+[![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)](https://mblithium.github.io/gambiconf-jsfuck)
+
+</div>
+
+Clicando no botão "ver código" é possível visualizar todo o código convertido.
+
 # Como usar
 
 ## Clone o repositório em sua máquina
