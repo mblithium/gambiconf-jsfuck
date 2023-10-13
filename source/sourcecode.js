@@ -6,7 +6,9 @@ document.body.innerHTML = `
         <h1>Gambiconf!</h1>
     </div>
     <img src="./img/mambi.png">
+    <img src="./img/qrcode.png" class="qrcode hide">
     <div class="buttons">
+        <button type="button" onClick="changeQRCodeView()" class="qrcodebtn">Ver QRCode do site</button>
         <button type="button" onClick="replaceURL_viewScript()">Ver código</button>
     </div>
 </div>
@@ -53,7 +55,6 @@ document.head.innerHTML = `
         text-align: center;
         font-size: 2.5rem;
     }
-
     button {
         padding: 20px;
         min-width: 200px;
@@ -64,8 +65,17 @@ document.head.innerHTML = `
         border: transparent;
         border-radius: 4px;
         display: block;
-        margin: 0 auto;
+        margin: 10px auto;
         color: white;
+    }
+    .qrcodebtn {
+        font-size: 1rem;
+    }
+    .qrcode {
+       display: block;
+    }
+    .hide {
+        display: none;
     }
 </style>
 `;
@@ -76,5 +86,10 @@ function replaceURL_viewScript () {
     } else {
         window.location.href += "scripts/scripts.js"
     }
-    
+}
+
+function changeQRCodeView() {
+    let qrcodebtn = document.querySelector(".qrcodebtn")
+    document.querySelector(".qrcode").classList.toggle("hide")
+    document.querySelector(".qrcode.hide") ? qrcodebtn.innerHTML = "Ver QRCode" : qrcodebtn.innerHTML = "Ocultar QRCode";
 }
